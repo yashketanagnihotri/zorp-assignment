@@ -4,6 +4,7 @@ import { BiBookAlt } from "react-icons/bi";
 import { CiSettings } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FiLogOut } from "react-icons/fi";
 
 function Sidebar({ children, setOpen, open }) {
   const handleOpen = (e) => {
@@ -43,11 +44,14 @@ function Sidebar({ children, setOpen, open }) {
             <BiBookAlt className="mr-3" />
             <p>Knowledge Base</p>
           </div>
-          <div className="flex items-center px-3 py-2 hover:bg-blue-900 cursor-pointer rounded-md">
-            <CiSettings className="mr-3" />
-            <p className="flex items-center">
-              <p>Settings</p>
-            </p>
+          <div className="flex justify-between items-center pr-5">
+            <div className="flex items-center px-3 py-2 hover:bg-blue-900 cursor-pointer rounded-md">
+              <CiSettings className="mr-3" />
+              <p className="flex items-center">
+                <p>Settings</p>
+              </p>
+            </div>
+            <FiLogOut />
           </div>
         </div>
       </div>
